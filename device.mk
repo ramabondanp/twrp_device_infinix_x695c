@@ -16,7 +16,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/redmi/rosemary
+LOCAL_PATH := device/infinix/x695c
 
 # A/B
 AB_OTA_PARTITIONS += \

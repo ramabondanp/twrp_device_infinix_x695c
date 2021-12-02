@@ -20,7 +20,7 @@
 
 ALLOW_MISSING_DEPENDENCIES := true
 
-DEVICE_PATH := device/redmi/rosemary
+DEVICE_PATH := device/infinix/x695c
 
 # Architecture
 TARGET_ARCH := arm64
@@ -36,7 +36,7 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a55
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := rosemary
+TARGET_BOOTLOADER_BOARD_NAME := x695c
 TARGET_NO_BOOTLOADER := true
 
 # Platform
@@ -44,7 +44,7 @@ TARGET_BOARD_PLATFORM := mt6785
 PRODUCT_PLATFORM := mt6785
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := rosemary,secret,maltose
+TARGET_OTA_ASSERT_DEVICE := x695c
 
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
@@ -59,8 +59,8 @@ BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 
-TARGET_KERNEL_SOURCE := kernel/redmi/rosemary
-TARGET_KERNEL_CONFIG := rosemary_defconfig
+TARGET_KERNEL_SOURCE := kernel/infinix/x695c
+TARGET_KERNEL_CONFIG := x695c_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 
 BOARD_KERNEL_IMAGE_NAME := Image.gz
@@ -142,7 +142,7 @@ PLATFORM_VERSION := 16.1.0
 ## TWRP-Specific configuration
 
 TW_THEME := portrait_hdpi
-TW_DEVICE_VERSION := BETA 6
+TW_DEVICE_VERSION := ALPHA
 TW_EXTRA_LANGUAGES := true
 TW_INCLUDE_NTFS_3G := true
 TW_HAS_MTP := true

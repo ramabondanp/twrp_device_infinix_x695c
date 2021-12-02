@@ -23,16 +23,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 # Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
-# Inherit from rosemary device
-$(call inherit-product, device/redmi/rosemary/device.mk)
+# Inherit from x695c device
+$(call inherit-product, device/infinix/x695c/device.mk)
 
 # Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := rosemary
-PRODUCT_NAME := twrp_rosemary
-PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := Note 10S
-PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_RELEASE_NAME := Redmi Note 10S
+PRODUCT_DEVICE := x695c
+PRODUCT_NAME := twrp_x695c
+PRODUCT_BRAND := Infinix
+PRODUCT_MODEL := Note 10 Pro
+PRODUCT_MANUFACTURER := Infinix
+PRODUCT_RELEASE_NAME := Infinix Note 10 Pro

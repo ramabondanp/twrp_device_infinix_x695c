@@ -20,7 +20,7 @@
 #
 
 
-FDEVICE="rosemary"
+FDEVICE="x695c"
 #set -o xtrace
 
 fox_get_target_device() {
@@ -46,7 +46,6 @@ then
 		export LC_ALL="C"
 	 	export OF_FLASHLIGHT_ENABLE=0
 		export ALLOW_MISSING_DEPENDENCIES=true
-		export TARGET_DEVICE_ALT="maltose, secret"
 		export OF_USE_GREEN_LED=0
 		export OF_HIDE_NOTCH=1
 		export OF_MAINTAINER="Woomymy"
@@ -75,7 +74,7 @@ then
 		export OF_USE_NEW_MAGISKBOOT=1
 		export OF_ENABLE_LPTOOLS=1
 		# screen settings
-		export OF_SCREEN_H=2400
+		export OF_SCREEN_H=2460
 		export OF_STATUS_H=100
 		export OF_ALLOW_DISABLE_NAVBAR=0 # We don't have physical buttons
 		export OF_STATUS_INDENT_LEFT=48
@@ -90,7 +89,7 @@ then
 		export FOX_RECOVERY_BOOT_PARTITION="/dev/block/by-name/boot"
 		export OF_AB_DEVICE=1
 	export OF_DONT_PATCH_ON_FRESH_INSTALLATION=1
-		export FOX_USE_SPECIFIC_MAGISK_ZIP="$(gettop)/device/redmi/rosemary/Magisk/Magisk.zip"	
+		export FOX_USE_SPECIFIC_MAGISK_ZIP="$(gettop)/device/infinix/x695c/Magisk/Magisk.zip"
 	fi
 fi
 #
