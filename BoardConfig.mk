@@ -172,3 +172,5 @@ ifneq ($(OF_HIDE_NOTCH),1)
     TW_Y_OFFSET  := 100 
     TW_H_OFFSET  := -100
 endif
+
+TARGET_SCREEN_HEIGHT := 2460
