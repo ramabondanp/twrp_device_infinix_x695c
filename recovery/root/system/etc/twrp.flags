@@ -1,5 +1,5 @@
 # mount point       fstype    device                                                                flags
-/cache              ext4      /dev/block/platform/bootdevice/by-name/rescue                         flags=display="Cache";
+/cache              ext4      /dev/block/platform/bootdevice/by-name/tranfs                         flags=display="Cache";
 /protect_f          ext4      /dev/block/platform/bootdevice/by-name/protect1                       flags=display="Protect_f";backup=1;
 /protect_s          ext4      /dev/block/platform/bootdevice/by-name/protect2                       flags=display="Protect_s";backup=1;
 /nvdata             ext4      /dev/block/platform/bootdevice/by-name/nvdata                         flags=display="Nvdata";backup=1;
@@ -15,7 +15,6 @@
 /dtbo               emmc      /dev/block/platform/bootdevice/by-name/dtbo	flags=slotselect;
 /otp                emmc      /dev/block/platform/bootdevice/by-name/otp
 /vbmeta             emmc      /dev/block/platform/bootdevice/by-name/vbmeta                         flags=slotselect;display="Vbmeta";backup=1;flashimg=1;
-/cust               ext4      /dev/block/platform/bootdevice/by-name/cust                           flags=display="Cust";
 
 # Removablee
 /external_sd        vfat      /dev/block/mmcblk0p1         /dev/block/mmcblk0  flags=storage;wipeingui;removable
