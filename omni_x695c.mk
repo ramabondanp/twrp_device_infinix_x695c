@@ -27,11 +27,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, device/infinix/x695c/device.mk)
 
 # Inherit some common TWRP stuff.
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := x695c
-PRODUCT_NAME := twrp_x695c
+PRODUCT_NAME := omni_x695c
 PRODUCT_BRAND := Infinix
 PRODUCT_MODEL := Note 10 Pro
 PRODUCT_MANUFACTURER := Infinix
